@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Recetas de Cocina</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recetas Deliciosas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Recetas Deliciosas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Recetas</a></li>
+                    <li><a href="#">Categorías</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <input type="text" placeholder="Buscar recetas...">
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <div class="content">
+                <h2>Descubre Nuevas Delicias Culinarias</h2>
+                <p>Explora nuestra última colección de deliciosas recetas, perfectas para cualquier ocasión.</p>
+                <div class="buttons">
+                    <button class="view-recipes">Ver Recetas</button>
+                    <button class="filter">Filtrar</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección Últimas Recetas -->
+        <section class="latest-recipes">
+            <h2>Últimas Recetas</h2>
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <h3>Risotto Cremoso de Champiñones</h3>
+                    <p>Un risotto cremoso y rico hecho con champiñones y parmesano...</p>
+                    <button class="view-recipes">Ver Receta</button>
+                </div>
+                <div class="recipe-card">
+                    <h3>Salmón a la Parrilla con Salsa de Eneldo y Limón</h3>
+                    <p>Filetes de salmón a la parrilla cubiertos con una salsa de eneldo y limón brillante y sabrosa...</p>
+                    <button class="view-recipes">Ver Receta</button>
+                </div>
+                <div class="recipe-card">
+                    <h3>Salteado de Verduras con Tofu</h3>
+                    <p>Un salteado colorido y lleno de sabor con verduras frescas y tofu crujiente...</p>
+                    <button class="view-recipes">Ver Receta</button>
+                </div>
+                <div class="recipe-card">
+                    <h3>Pastel de Lava de Chocolate</h3>
+                    <p>Un pastel de chocolate decadente con un centro de chocolate fundido...</p>
+                    <button class="view-recipes">Ver Receta</button>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>© 2023 Recetas Deliciosas. Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+            </nav>
+        </footer>
+    </body>
 <body>
     <script src="/assets/index.js"></script>
 </body>
