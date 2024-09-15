@@ -23,10 +23,11 @@
                 <li><a href="#">Categorías</a></li>
                 <li><a href="#">Acerca de</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li> <i class='bx bx-search-alt-2 bx-tada bx-rotate-90'></i><input type="text"
-                        placeholder="Buscar recetas..."> </li>
+                <li> <i class='bx bx-search-alt-2 bx-tada bx-rotate-90'></i>
+                    <input class="filter-search" type="text" placeholder="Buscar recetas..."> </li>
+                <li><a class="active" id="toggle-dark-mode" class="toggle-mode">Modo Oscuro</a></li>
             </ul>
-
+            
         </nav>
     </header>
 
@@ -34,8 +35,25 @@
         <div class="content">
             <h2>Descubre Nuevas Delicias Culinarias</h2>
             <p>Explora nuestra última colección de deliciosas recetas, perfectas para cualquier ocasión.</p>
-            <button type="button" class="view-recipes">Ver Recetas</button>
-            <button type="button" class="filter">Filtrar</button>
+            <button type="button" class="view-recipes"><a href="#secRec" class="verRecetas" style="color: white;">Ver Recetas</a></button>
+            <button type="button" class="filter"><a href="" style="color: white;">Enviar tu receta</a></button>
+            <!-- Modal para enviar receta -->
+            <div id="send-recipe-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Enviar Tu Receta</h2>
+                    <form id="recipe-form">
+                        <label for="recipe-name">Nombre de la receta:</label>
+                        <input type="text" id="recipe-name" required>
+                        <label for="recipe-description">Descripción:</label>
+                        <textarea id="recipe-description" rows="4" required></textarea>
+                        <label for="recipe-ingredients">Ingredientes:</label>
+                        <textarea id="recipe-ingredients" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <p id="confirmation-message" style="display: none; color: green;">Gracias por compartir tu receta.</p>
+                </div>
+            </div>
         </div>
         <div class="image">
             <img src="./images/platoprincipal.png" alt="Plato principal">
@@ -47,7 +65,7 @@
     <!-- Sección Últimas Recetas -->
     <section class="latest-recipes">
         <div class="titulorecetas">
-            <h2>Últimas Recetas</h2>
+            <h2 id="secRec">Últimas Recetas</h2>
         </div>
         <div class="recipes-grid">
 
@@ -56,6 +74,14 @@
                 <h3>Risotto Cremoso de Champiñones</h3>
                 <p>Un risotto cremoso y rico hecho con champiñones y parmesano...</p>
                 <button class="view-recipes btnrecetas">Ver Receta</button>
+                <!-- Modal para ver ingredientes de la receta -->
+                <div id="recipe-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="recipe-title"></h2>
+                        <pre id="recipe-description"></pre>
+                    </div>
+                </div>
             </div>
             <div class="recipe-card">
                 <img src="./images/salmon.png" alt="">
@@ -67,12 +93,6 @@
                 <img src="./images/salteado.jpg" alt="">
                 <h3>Salteado de Verduras con Tofu</h3>
                 <p>Un salteado colorido y lleno de sabor con verduras frescas y tofu crujiente...</p>
-                <button class="view-recipes btnrecetas">Ver Receta</button>
-            </div>
-            <div class="recipe-card">
-                <img src="./images/chocolate.png" alt="">
-                <h3>Pastel de Lava de Chocolate</h3>
-                <p>Un pastel de chocolate decadente con un centro de chocolate fundido...</p>
                 <button class="view-recipes btnrecetas">Ver Receta</button>
             </div>
         </div>
