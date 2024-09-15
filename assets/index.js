@@ -28,7 +28,7 @@ document.getElementById('toggle-dark-mode').addEventListener('click', function()
     }
 });
 
-//modal para las recetas
+//4- modal para las recetas
 const modal = document.getElementById('recipe-modal');
 const modalTitle = document.getElementById('recipe-title');
 const modalDescription = document.getElementById('recipe-description');
@@ -51,7 +51,7 @@ const recipes = [
     },
     {
         title: 'Ingredientes',
-        description: `
+            description: `
                 2 cucharaditas de aceite de oliva\n
                 1 cucharada de alcaparras escurridas\n
                 1 cucharadita de cáscara de limón fresco rallada\n
@@ -67,7 +67,7 @@ const recipes = [
     },
     {
         title: 'Ingredientes',
-        description: `
+            description: `
                 250g tofu firme en dados\n
                 50g de judías verdes en pedacitos\n
                 50g de tirabeques cortados por la mitad en diagonal\n
@@ -83,16 +83,16 @@ const recipes = [
     },
     {
         title: 'Ingredientes',
-        description: `  
-            Cocoa sin azúcar para repostería\n
-            6oz de chocolate semiamargo para repostería, picado\n
-            1/2 taza más 2 cucharadas de mantequilla o de margarina\n
-            3 huevos enteros\n
-            3 yemas de huevo\n
-            1 1/2 tazas de azúcar en polvo\n
-            1/2 taza de harina multiusos\n
-            Azúcar en polvo adicional, opcional\n
-            Naranjitas chinas azucaradas (sugared kumquats), opcionales`
+            description: `  
+                Cocoa sin azúcar para repostería\n
+                6oz de chocolate semiamargo para repostería, picado\n
+                1/2 taza más 2 cucharadas de mantequilla o de margarina\n
+                3 huevos enteros\n
+                3 yemas de huevo\n
+                1 1/2 tazas de azúcar en polvo\n
+                1/2 taza de harina multiusos\n
+                Azúcar en polvo adicional, opcional\n
+                Naranjitas chinas azucaradas (sugared kumquats), opcionales`
     }
 ];
 
@@ -119,11 +119,11 @@ window.addEventListener('click', (e) => {
 });
 
 
-//4 - modal para enviar recetas
+//5- modal para enviar recetas
 document.addEventListener('DOMContentLoaded', () => {
     const sendRecipeModal = document.getElementById('send-recipe-modal');
     const sendRecipeButton = document.querySelector('.filter a');
-    const closeModal = sendRecipeModal.querySelector('.close');
+    const closeModal = sendRecipeModal.querySelector('.close-send-recipe');
     const form = document.getElementById('recipe-form');
     const confirmationMessage = document.getElementById('confirmation-message');
 

@@ -308,6 +308,7 @@ body.dark-mode .filter {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
 }
 
 .modal-content {
@@ -326,12 +327,36 @@ body.dark-mode .filter {
     cursor: pointer;
 }
 
-.modal{
+/* Estilos del modal para enviar receta */
+.modal-send-recipe {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.7rem;
 }
 
-/* Estilos del modal para enviar receta */
-#send-recipe-modal .modal-content {
+.modal-content-send-recipe {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: var(--box-shadow);
+}
+
+.close-send-recipe {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#send-recipe-modal .modal-content-send-recipe {
     padding: 20px;
     max-width: 500px;
     margin: auto;

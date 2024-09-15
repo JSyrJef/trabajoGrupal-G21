@@ -38,15 +38,15 @@
             <button type="button" class="view-recipes"><a href="#secRec" class="verRecetas" style="color: white;">Ver Recetas</a></button>
             <button type="button" class="filter"><a href="" style="color: white;">Enviar tu receta</a></button>
             <!-- Modal para enviar receta -->
-            <div id="send-recipe-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
+            <div id="send-recipe-modal" class="modal-send-recipe">
+                <div class="modal-content-send-recipe">
+                    <span class="close-send-recipe">&times;</span>
                     <h2>Enviar Tu Receta</h2>
                     <form id="recipe-form">
                         <label for="recipe-name">Nombre de la receta:</label>
                         <input type="text" id="recipe-name" required>
                         <label for="recipe-description">Descripción:</label>
-                        <textarea id="recipe-description" rows="4" required></textarea>
+                        <textarea id="recipe-description-send-recipe" rows="4" required></textarea>
                         <label for="recipe-ingredients">Ingredientes:</label>
                         <textarea id="recipe-ingredients" rows="4" required></textarea>
                         <button type="submit">Enviar</button>
